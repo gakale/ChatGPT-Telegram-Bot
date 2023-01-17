@@ -7,7 +7,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "ENTER YOUR API KEY HERE"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -15,7 +15,7 @@ print(aienv)
 #Telegram bot key
 tgenv = os.getenv('TELEGRAM_KEY')
 if tgenv == None:
-    tgkey = "ENTER YOUR TELEGRAM TOKEN HERE"
+    tgkey = "5944930159:AAE-fXtfyMk3ZSKdnoAgXOC9eHpOj14h-Rw"
 else:
     tgkey = tgenv
 print(tgenv)
@@ -35,8 +35,8 @@ running = False
 cache = None
 qcache = None
 chat_log = None
-botname = 'Harshit ethic'
-username = 'harshitethic_bot'
+botname = 'Ton Proffesseur'
+username = 'LeProfesseur_Bot'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
 max = int(3000)
 
@@ -66,9 +66,9 @@ def start(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
-        update.message.reply_text('Hi')
+        botname = 'Ton Proffesseur'
+        username = 'LeProfesseur_Bot'
+        update.message.reply_text('Salut')
         return 
     else:
         update.message.reply_text('I am currently talking to someone else. Can you please wait ' + left + ' seconds?')
